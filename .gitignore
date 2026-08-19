@@ -1,0 +1,2 @@
+sim/results/*
+!sim/results/waveforms.vcd

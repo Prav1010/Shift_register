@@ -1,1 +1,0 @@
-"shift_register_tb" -s "shift_register_tb_sim" 
