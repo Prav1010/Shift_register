@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 package shift_register_pkg;
 
     // Shift direction encoding

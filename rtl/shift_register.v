@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module shift_register #(
     parameter WIDTH = 8,
     parameter DEPTH = 4,

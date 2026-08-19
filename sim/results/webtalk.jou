@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Aug 19 10:52:32 2026
+# Process ID: 9916
+# Current directory: C:/Users/prave/shift_register/sim/results
+# Command line: wbtcv.exe -mode batch -source C:/Users/prave/shift_register/sim/results/xsim.dir/shift_register_tb_sim/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/prave/shift_register/sim/results/webtalk.log
+# Journal file: C:/Users/prave/shift_register/sim/results\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/prave/shift_register/sim/results/xsim.dir/shift_register_tb_sim/webtalk/xsim_webtalk.tcl -notrace

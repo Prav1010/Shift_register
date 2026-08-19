@@ -72,7 +72,7 @@ module shift_register_tb;
         en = 1;
         load = 1;
         parallel_in = 8'hA5;
-        @(negedge clk);
+        repeat (DEPTH) @(negedge clk);
         load = 0;
         if (parallel_out !== 8'hA5) begin
             $display("FAIL: Test 2 Parallel Load - parallel_out = %0h, expected A5", parallel_out);
@@ -115,7 +115,7 @@ module shift_register_tb;
         en = 1;
         load = 1;
         parallel_in = 8'h3C;
-        @(negedge clk);
+        repeat (DEPTH) @(negedge clk);
         load = 0;
         if (parallel_out !== 8'h3C) begin
             $display("FAIL: Test 5 Reload - parallel_out = %0h, expected 3C", parallel_out);
