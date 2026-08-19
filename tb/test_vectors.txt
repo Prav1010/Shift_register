@@ -1,0 +1,16 @@
+# Test Vectors for Parameterized Shift Register
+# Format: TEST_NAME | rst_n | en | load | serial_in | parallel_in | expected_parallel_out
+
+TEST1_RESET       | 0 | 0 | 0 | 0 | 00 | 00
+TEST2_PARLOAD     | 1 | 1 | 1 | 0 | A5 | A5
+TEST3_SHIFT_LEFT  | 1 | 1 | 0 | 1 | 00 | --
+TEST4_HOLD        | 1 | 0 | 0 | 0 | 00 | (unchanged)
+TEST5_RELOAD      | 1 | 1 | 1 | 0 | 3C | 3C
+
+# Notes:
+# - WIDTH = 8, DEPTH = 4, DIR = 1 (left shift) used as default testbench config
+# - '--' means value depends on shift history, checked via simulation log only
+# - Additional manual test configs to try by editing WIDTH/DEPTH/DIR parameters in tb:
+#   WIDTH=4, DEPTH=1, DIR=0 (right shift, minimum depth)
+#   WIDTH=16, DEPTH=8, DIR=1 (left shift, maximum depth)
+#   WIDTH=32, DEPTH=4, DIR=0 (right shift, wide register)
